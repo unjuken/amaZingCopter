@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+
+<body>
+<div id="hand"></div>
+<div id="frontVideo">
+	<video autoplay>
+  		<source src="video.mp4" type="video/mp4">
+	</video>
+</div>
+
+<div id="backVideo">
+	<video autoplay>
+  		<source src="video.mp4" type="video/mp4">
+	</video>
+</div>
+
+<div id="moves">
+	<div id="up" class="move">
+		<img  class="images" src="Arrows.png" alt="upImage">
+	</div>
+	<div id="leftGroup">
+		<div id="left" class="move">
+			<img  class="images" src="Arrows.png" alt="leftImage">
+		</div>
+		<div id="rotate-left" class="move">
+			<img  class="images" src="arrow2.png" alt="rotateLeftImage">
+		</div>
+	</div>
+
+	<div id="centerGroup">
+		<div id="forward" class="move">
+			<img  class="images" src="Arrows.png" alt="forwardImage">
+		</div>
+		<div id="backward" class="move">
+			<img  class="images" src="Arrows.png" alt="backwardImage">
+		</div>
+	</div>
+	
+
+	<div id="rightGroup">
+		<div id="rotate-right" class="move">
+			<img  class="images" src="arrow2.png" alt="rotateRightImage">
+		</div>
+		<div id="right" class="move">
+			<img  class="images" src="Arrows.png" alt="rightImage">
+		</div>
+	</div>
+	
+	<div id="down" class="move">
+		<img  class="images" src="Arrows.png" alt="downImage">
+	</div>
+</div>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="handHandler.js"></script>
+	<script src="sockets.js"></script>
+</body>
+</html>
